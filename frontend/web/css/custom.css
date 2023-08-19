@@ -1,0 +1,22 @@
+.custom-navbar .navbar .nav .navbar-brand .collapse .navbar-collapse {
+    background-color: blue; !important; /* Your desired background color */
+    color: #28a745; !important;
+    /* Add more custom styles as needed */
+}
+.custom-navbar .navbar-brand {
+    color: #28a745; /* Cor do nome do aplicativo */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    color: #28a745; /* Cor dos links do menu */
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-color: #28a745; /* Cor do ícone do botão de toggler */
+}
+.btn .btn-link .login{
+    color: #28a745;
+}
+.btn .custom-btn {
+    color: #28a745;
+}
