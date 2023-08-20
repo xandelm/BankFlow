@@ -29,7 +29,9 @@ $this->registerCssFile(Yii::getAlias('@web') . '\css\custom.css');
 <header class="mb-4">
     <?php
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
+//        'brandLabel' => Yii::$app->name,
+        'brandLabel' => Html::img(Yii::$app->request->baseUrl . '/favicon2.ico', ['alt' => Yii::$app->name, 'class' => 'favicon']) . Yii::$app->name,
+
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
 //            'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
