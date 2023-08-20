@@ -16,7 +16,7 @@ Foi desenvolvido utilizando Yii 2 Advanced Project Template.
 [//]: # (The template includes three tiers: front end, back end, and console, each of which)
 [//]: # (is a separate Yii application.)
 O template possui três tiers: front end, back end e console, cada qual é uma aplicação Yii diferente.
-As dependencias estão presentes na pasta vendor, e podem ser instaladas utilizando composer.
+As dependências estão presentes na pasta vendor, e podem ser instaladas utilizando composer.
 
 <h2>Relatório de Desenvolvimento</h2>
 <p>Este projeto foi desenvolvido utilizando xampp com phpmyadmin e a IDE PhpStorm.</p>
