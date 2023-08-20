@@ -20,3 +20,39 @@
 .btn .custom-btn {
     color: #28a745;
 }
+
+html,
+body {
+    background-color: #ddd;
+    height: 100%;
+    flex:1;
+}
+
+
+main{
+    flex: 1;
+}
+aside {
+    min-width: 200px;
+    background-color: #333333;
+}
+
+aside .nav-pills .nav-link {
+    border-radius: 0;
+    /*color:#333333;*/
+    color: #28a745;
+}
+
+aside .nav-pills .nav-link:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+aside .nav-pills .nav-link.active {
+    background: rgba(0,0,0,0.05);
+    color: #28a745;
+    border-left: 4px solid #28a745;
+}
+
+.content-wrapper {
+    flex: 1;
+}

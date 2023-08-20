@@ -1,18 +1,39 @@
 <?php
-use yii\helpers\Html;
 ?>
 
-<aside class="sidebar custom-sidebar">
-    <nav class="nav flex-column">
-        <?= Html::a('Dashboard', ['/site/dashboard'], ['class' => 'nav-link custom-link']) ?>
-        <div class="custom-submenu">
-            <?= Html::a('Produtos', ['/product/index'], ['class' => 'nav-link custom-link']) ?>
-            <?= Html::a('Pedidos', ['/order/index'], ['class' => 'nav-link custom-link']) ?>
-            <?= Html::a('Clientes', ['/customer/index'], ['class' => 'nav-link custom-link']) ?>
-        </div>
-        <!-- Adicione mais links de navegação conforme necessário -->
-    </nav>
+<aside class="shadow">
+<!--<aside>-->
+    <?php
+    echo \yii\bootstrap5\Nav::widget([
+        'options' => [
+            'class' => 'd-flex flex-column nav-pills mt-5 py-3'
+        ],
+        'items' => [
+            [
+                'label' => 'Contas',
+                'url' => ['/site/index']
+            ],
+            [
+                'label' => 'Histórico',
+                'url' => ['/historico/index']
+            ],
+            [
+                'label' => 'Nova Transação',
+                'url' => ['/transacao/index']
+            ],
+            [
+                'label' => 'Informações',
+                'url' => ['/informacoes/index']
+            ],
+            [
+                'label' => 'Configurações',
+                'url' => ['/configuracoes/index']
+            ]
+        ]
+    ])
+    ?>
 </aside>
+
 
 
 <!--<div class="list-group">-->

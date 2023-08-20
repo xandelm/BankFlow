@@ -123,3 +123,23 @@ a.desc:after {
 .custom-navbar .navbar-toggler-icon {
     background-color: #28a745; /* Cor do ícone do botão de toggler */
 }
+
+html,
+body {
+    height: 100%;
+}
+
+aside .nav-pills .nav-link {
+    border-radius: 0;
+    color:#333333;
+}
+
+aside .nav-pills .nav-link:hover {
+    background: rgba(0,0,0,0.05);
+}
+
+aside .nav-pills .nav-link.active {
+    background: rgba(0,0,0,0.05);
+    color: #28a745;
+    border-left: 4px solid #28a745;
+}

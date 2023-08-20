@@ -25,24 +25,24 @@ $this->registerCssFile(Yii::getAlias('@web') . '\css\custom.css');
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="d-flex flex-column h-100">
+<body class="d-flex flex-column h-100 py-3">
 <?php $this->beginBody() ?>
 
-<header>
+<header class="mb-4">
     <?php
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
 //            'class' => 'navbar navbar-expand-md navbar-dark bg-dark fixed-top',
-            'class' => 'navbar navbar-expand-md navbar-dark custom-navbar fixed-top custom-navbar',
+            'class' => 'navbar navbar-expand-md navbar-dark custom-navbar fixed-top custom-navbar shadow',
             'style' => 'background-color: #333; color=#28a745;',
         ],
     ]);
     $menuItems = [
-        ['label' => 'Home', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
-        ['label' => 'Contact', 'url' => ['/site/contact']],
+        ['label' => 'Página Inicial', 'url' => ['/site/index']],
+        ['label' => 'Sobre', 'url' => ['/site/about']],
+        ['label' => 'Contato', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
         $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
@@ -66,8 +66,11 @@ $this->registerCssFile(Yii::getAlias('@web') . '\css\custom.css');
     ?>
 </header>
 
-<main role="main" class="flex-shrink-0">
-    <div class="container">
+<!--<main role="main" class="flex-shrink-0">-->
+<main role="main" class="d-flex">
+    <?php echo $this->render('_sidebar') ?>
+<!--    <div class="container">-->
+    <div class="content-wrapper p-3">
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>
