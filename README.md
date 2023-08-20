@@ -2,24 +2,26 @@
     <a href="https://github.com/yiisoft" target="_blank">
         <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 Advanced Project Template</h1>
+    <h1 align="center">BankFlow</h1>
     <br>
 </p>
 
-Yii 2 Advanced Project Template is a skeleton [Yii 2](https://www.yiiframework.com/) application best for
-developing complex Web applications with multiple tiers.
+Protótipo contendo estruturas para um website para uso de instituições financeiras e seus clientes.
 
-The template includes three tiers: front end, back end, and console, each of which
-is a separate Yii application.
+Foi desenvolvido utilizando Yii 2 Advanced Project Template. 
 
-The template is designed to work in a team development environment. It supports
-deploying the application in different environments.
+[//]: # (is a skeleton [Yii 2]&#40;https://www.yiiframework.com/&#41; application best for)
+[//]: # (developing complex Web applications with multiple tiers.)
 
-Documentation is at [docs/guide/README.md](docs/guide/README.md).
+[//]: # (The template includes three tiers: front end, back end, and console, each of which)
+[//]: # (is a separate Yii application.)
+O template possui três tiers: front end, back end e console, cada qual é uma aplicação Yii diferente.
+As dependencias estão presentes na pasta vendor, e podem ser instaladas utilizando composer.
 
-[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-advanced.svg)](https://packagist.org/packages/yiisoft/yii2-app-advanced)
-[![build](https://github.com/yiisoft/yii2-app-advanced/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-advanced/actions?query=workflow%3Abuild)
+<h2>Relatório de Desenvolvimento</h2>
+<p>Este projeto foi desenvolvido utilizando xampp com phpmyadmin e a IDE PhpStorm.</p>
+<p>O desenvolvimento do projeto foi realizado como um teste prático de duração de 48 horas. Dentro do tempo alocado, foi necessário a instalação do ambiente e aquisição de conhecimentos de PHP e Yii2. Apenas conhecimentos prévios de HTML, CSS e Git foram utilizados além dos adquiridos.</p>
+<p>Considerando o curto prazo de dois dias dedicado ambos a aprendizagem da plataforma em si, o desenvolvimento do projeto, a gravação de um vídeo de apresentação e criação de documentações, os resultados de conhecimentos adquiridos e um protótipo inicial do sistema foram satisfatórios e o projeto foi uma ótima oportunidade de aprendizado.</p>
 
 DIRECTORY STRUCTURE
 -------------------
