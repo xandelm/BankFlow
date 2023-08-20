@@ -26,6 +26,7 @@ body {
     background-color: #ddd;
     height: 100%;
     flex:1;
+    padding-bottom: 0px;
 }
 
 /*header {*/
@@ -61,6 +62,26 @@ aside .nav-pills .nav-link.active {
     justify-content: space-between;
 
 }
+
+.btn .btn-custom {
+    padding: 20px;
+}
+
+.btn-file {
+    position: relative;
+}
+.btn-file input {
+    position: absolute;
+    padding: 20px;
+    opacity: 0;
+    background-color: #333333;
+    color: #28a745;
+}
+
+.form-group{
+    padding: 10px;
+}
+
 
 /*.conta-index {*/
 /*    */

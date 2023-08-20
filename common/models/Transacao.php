@@ -33,10 +33,12 @@ class Transacao extends \yii\db\ActiveRecord
     {
         return [
             [['DataHora'], 'safe'],
-            [['TipoTransacao', 'ComprovanteRenda'], 'string'],
+//            [['TipoTransacao', 'ComprovanteRenda'], 'string'],
+            [['TipoTransacao'], 'string'],
             [['Valor'], 'number'],
             [['NumeroConta'], 'integer'],
-            [['NumeroConta'], 'exist', 'skipOnError' => true, 'targetClass' => Conta::class, 'targetAttribute' => ['NumeroConta' => 'NumeroConta']],
+            [['NumeroConta'], 'file', 'extensions' => ['pdf']],
+            [['ComprovanteRenda'], 'exist', 'skipOnError' => true, 'targetClass' => Conta::class, 'targetAttribute' => ['NumeroConta' => 'NumeroConta']],
         ];
     }
 

@@ -25,7 +25,7 @@ $this->registerCssFile(Yii::getAlias('@web') . '\css\custom.css');
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="d-flex flex-column h-100 py-3">
+<body class="d-flex flex-column h-100 pt-3">
 <header class="mb-4">
     <?php
     NavBar::begin([
@@ -71,12 +71,12 @@ $this->registerCssFile(Yii::getAlias('@web') . '\css\custom.css');
     <?php echo $content ?>
 </div>
 
-<footer class="footer mt-auto py-3 text-muted">
-    <div class="container">
-        <p class="float-start">&copy; <?= Html::encode(Yii::$app->name) ?> <?= date('Y') ?></p>
-        <p class="float-end"><?= Yii::powered() ?></p>
-    </div>
-</footer>
+<!--<footer class="footer mt-auto py-3 text-muted">-->
+<!--    <div class="container">-->
+<!--        <p class="float-start">&copy; --><?php //= Html::encode(Yii::$app->name) ?><!-- --><?php //= date('Y') ?><!--</p>-->
+<!--        <p class="float-end">--><?php //= Yii::powered() ?><!--</p>-->
+<!--    </div>-->
+<!--</footer>-->
 
 <?php $this->endBody() ?>
 </body>

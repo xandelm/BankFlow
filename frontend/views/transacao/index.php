@@ -30,8 +30,13 @@ $this->params['breadcrumbs'][] = $this->title;
             'DataHora',
             'TipoTransacao',
             'Valor',
-            'ComprovanteRenda',
-            //'NumeroConta',
+                    [
+                    'attribute' => 'ComprovanteRenda',
+                        'content' => function($model){
+                            return $this->render('_comprovanterenda', ['model' => $model]);
+                        }
+                    ],
+            'NumeroConta',
             [
                 'class' => ActionColumn::className(),
                 'urlCreator' => function ($action, Transacao $model, $key, $index, $column) {
