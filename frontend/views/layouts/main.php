@@ -21,9 +21,11 @@ $this->beginContent('@frontend/views/layouts/base.php')
 
 <!--<main role="main" class="flex-shrink-0">-->
 <main role="main" class="d-flex">
-    <?php echo $this->render('_sidebar') ?>
+    <?php if(!(Yii::$app->user->isGuest)) {
+        echo $this->render('_sidebar'); }
+    ?>
 <!--    <div class="container">-->
-    <div class="content-wrapper p-3">
+    <div class="content-wrapper p-4">
         <?= Alert::widget() ?>
         <?= $content ?>
     </div>

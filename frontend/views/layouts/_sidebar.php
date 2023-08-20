@@ -10,20 +10,16 @@
         ],
         'items' => [
             [
-                'label' => 'Contas',
+                'label' => 'Informações',
                 'url' => ['/site/index']
             ],
             [
-                'label' => 'Histórico',
-                'url' => ['/historico/index']
+                'label' => 'Contas',
+                'url' => ['/conta/index']
             ],
             [
-                'label' => 'Nova Transação',
+                'label' => 'Transações',
                 'url' => ['/transacao/index']
-            ],
-            [
-                'label' => 'Informações',
-                'url' => ['/informacoes/index']
             ],
             [
                 'label' => 'Configurações',
